@@ -1,3 +1,6 @@
+In case the notebook can't be opened on github, feel free to view it in Colab :
+[Open Colab](https://colab.research.google.com/drive/1fWZmr_kU67mmXuQGH0Xis9fMlUqeDsQ3?usp=sharing)
+
 # 🥜 Implementation of DC-GAN and WGAN for Pistachios Image Generation
 
 This project explores Generative Adversarial Networks (GANs) to synthesize realistic pistachio images that can enrich downstream tasks like classification, object detection, and other computer vision applications.
