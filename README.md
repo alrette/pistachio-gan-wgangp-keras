@@ -59,8 +59,12 @@ Improved gan variant for more stable training, changing discriminator to critic 
 
 # 🏆 Quantitative Evaluation (FID)
 To provide a definitive and accurate quantitative measurement for both of the model, Frechet Inception Distance is used and we got the score of 
-- 145.8 for the DCGAN, and
-- 145.6 for WGAN
+
+| Model    | FID Score | Notes                                                                 |
+|----------|-----------|----------------------------------------------------------------------|
+| **DCGAN**   | **145.8**   | Achieved via a “lucky checkpoint” but training was unstable (mode collapse risk). |
+| **WGAN-GP** | **145.6**   | Achieved consistently with stable training and more diverse outputs. |
+
 
 This might seems just a little bit different from both of the model, However from both of the model we can't just look at the FID number, but we have to see the process too.
 - `DCGAN-The Baseline` : The FID score of 145.8 for the DCGAN represents a "lucky punch" from a chaotic and unstable training process. As evidenced by the erratic loss curves, the DCGAN model was constantly on the verge of either mode collapse or training divergence. This score is achieved by picking a single checkpoint where the model was at the best performance, before the generator keep losing as we can see at the plot of loss. The training is also unstable. Influencing the decision to try a different model, which is WGAN-GP.
