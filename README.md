@@ -9,7 +9,7 @@ A comvolution based generative adversarial network for image synthesis, built ba
 2. Wassertein GAN with Gradient Penalty
 Improved gan variant for more stable training, changing discriminator to critic which instead of classifying the images into real or fake, it gives score to the generator's image generation, better score meaning that the critics think that the image generated is more likely to be real
 
-# Architecture
+# 👷‍♂️ Architecture
 ## DCGAN<br>
 1. Generator:
 - Dense → reshape into feature maps (28x28x64).
@@ -42,7 +42,7 @@ Improved gan variant for more stable training, changing discriminator to critic 
 
 👉 Produces more stable training and higher-quality pistachio images compared to vanilla GAN/DCGAN.
 
-# Results:
+# 💡 Results:
 ## Loss PLot
 - DCGAN : Unstable, oscillating, prone to mode collapse.
 - WGAN - GP : Smooth, interpretable, “healthy fight” between generator & critic.
