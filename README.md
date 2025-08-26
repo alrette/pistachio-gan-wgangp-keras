@@ -54,6 +54,10 @@ Improved gan variant for more stable training, changing discriminator to critic 
 
 ![Alt text](images/loss_wgan.png)
 
+
+## Sample Real :
+![Alt text](images/sample-real.png)
+
 ## Sample Outputs
 ![Alt text](images/sample_dc.png)
 
